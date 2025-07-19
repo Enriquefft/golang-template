@@ -1,10 +1,10 @@
 package main
 
 import (
-    "fmt"
-    "github.com/yourname/go-project-template/internal/helloworld"
+	"fmt"
+	"github.com/Enriquefft/golang-template/internal/helloworld"
 )
 
 func main() {
-    fmt.Println(helloworld.Greet(""))
+	fmt.Println(helloworld.Greet(""))
 }

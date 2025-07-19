@@ -1,5 +1,5 @@
-# Go Project Template
-[![CI](https://github.com/yourname/go-project-template/actions/workflows/ci.yml/badge.svg)](https://github.com/yourname/go-project-template/actions/workflows/ci.yml) [![Go Reference](https://pkg.go.dev/badge/github.com/yourname/go-project-template.svg)](https://pkg.go.dev/github.com/yourname/go-project-template)
+# Golang Template
+[![CI](https://github.com/Enriquefft/golang-template/actions/workflows/ci.yml/badge.svg)](https://github.com/Enriquefft/golang-template/actions/workflows/ci.yml) [![Go Reference](https://pkg.go.dev/badge/github.com/Enriquefft/golang-template.svg)](https://pkg.go.dev/github.com/Enriquefft/golang-template)
 
 
 A professional Go starter template featuring best practices and modern tooling: Go 1.22+ with generics, Docker, GitHub Actions, GoReleaser, GolangCI‑Lint, Dependabot, and Nix flakes for reproducible dev environments.
@@ -30,8 +30,8 @@ A professional Go starter template featuring best practices and modern tooling: 
 Clone the repository and enter the development environment:
 
 ```bash
-git clone https://github.com/yourname/go-project-template.git
-cd go-project-template
+git clone https://github.com/Enriquefft/golang-template.git
+cd golang-template
 nix develop
 ````
 
