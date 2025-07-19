@@ -1,0 +1,14 @@
+project_name: go-project-template
+builds:
+  - main: ./cmd/app
+    ldflags: -X github.com/yourname/go-project-template/pkg/version.Version={{.Version}} -X github.com/yourname/go-project-template/pkg/version.Commit={{.FullCommit}} -X github.com/yourname/go-project-template/pkg/version.BuildDate={{.Date}}
+archives:
+  - format: tar.gz
+    name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
+checksum:
+  name_template: "checksums.txt"
+
+release:
+  github:
+    owner: yourname
+    name: go-project-template
