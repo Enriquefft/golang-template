@@ -1,4 +1,4 @@
-module github.com/yourname/go-project-template
+module github.com/Enriquefft/golang-template
 
 go 1.24.3
 
