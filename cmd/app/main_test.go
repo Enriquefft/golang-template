@@ -1,8 +1,9 @@
 package main
 
 import (
-	"github.com/Enriquefft/golang-template/internal/helloworld"
 	"testing"
+
+	"github.com/Enriquefft/golang-template/internal/helloworld"
 )
 
 func TestMainGreet(t *testing.T) {

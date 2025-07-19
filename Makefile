@@ -1,20 +1,23 @@
-BINARY=app
+BINARY := app
 
-.PHONY: all build test lint fmt clean
+.PHONY: all build test lint fmt clean vet
 
 all: build
 
 build:
-go build -o bin/$(BINARY) ./cmd/app
+	go build -o bin/$(BINARY) ./cmd/app
 
 test:
-go test ./...
+	go test ./...
 
 lint:
-golangci-lint run
+	golangci-lint run
 
 fmt:
-gofmt -w $(shell find . -name '*.go' -not -path './vendor/*')
+	gofumpt -w $(shell find . -name '*.go' -not -path './vendor/*')
+
+vet:
+	go vet ./...
 
 clean:
-rm -rf bin
+	rm -rf bin

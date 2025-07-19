@@ -16,13 +16,17 @@ jobs:
       - name: Install GolangCI-Lint
         uses: golangci/golangci-lint-action@v3
         with:
-          version: v1.57
+          version: v1.64.8
+      - name: Format
+        run: make fmt
+      - name: Vet
+        run: make vet
       - name: Build
         run: go build ./...
       - name: Test
         run: go test -coverprofile=coverage.out ./...
       - name: Lint
-        run: golangci-lint run
+        run: make lint
       - name: Upload coverage
         uses: actions/upload-artifact@v4
         with:
