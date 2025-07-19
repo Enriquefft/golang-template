@@ -1,4 +1,6 @@
 # Go Project Template
+[![CI](https://github.com/yourname/go-project-template/actions/workflows/ci.yml/badge.svg)](https://github.com/yourname/go-project-template/actions/workflows/ci.yml) [![Go Reference](https://pkg.go.dev/badge/github.com/yourname/go-project-template.svg)](https://pkg.go.dev/github.com/yourname/go-project-template)
+
 
 A professional Go starter template featuring best practices and modern tooling: Go 1.22+ with generics, Docker, GitHub Actions, GoReleaser, GolangCI‑Lint, Dependabot, and Nix flakes for reproducible dev environments.
 
