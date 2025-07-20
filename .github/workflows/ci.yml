@@ -29,6 +29,10 @@ jobs:
         run: go test -coverprofile=coverage.out ./...
       - name: Lint
         run: make lint
+
+      - name: Vulnerability Check
+        run: make govulncheck
+
       - name: Upload coverage
         uses: actions/upload-artifact@v4
         with:

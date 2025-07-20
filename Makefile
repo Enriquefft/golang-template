@@ -1,6 +1,6 @@
 BINARY := app
 
-.PHONY: all build test lint fmt clean vet
+.PHONY: all build test lint fmt clean vet govulncheck
 
 all: build
 
@@ -18,6 +18,9 @@ fmt:
 
 vet:
 	go vet ./...
+
+govulncheck:
+	go run golang.org/x/vuln/cmd/govulncheck ./...
 
 clean:
 	rm -rf bin
