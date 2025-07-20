@@ -19,6 +19,13 @@ jobs:
       - name: Install gofumpt
         run: |
           go install mvdan.cc/gofumpt@v0.8.0
+
+      - name: Install govulncheck
+        run: |
+          go install golang.org/x/vuln/cmd/govulncheck
+
+
+
       - name: Format
         run: make fmt
       - name: Vet
