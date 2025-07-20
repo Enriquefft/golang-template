@@ -4,7 +4,7 @@ This repository provides a **Go** starter template with Docker, GoReleaser, Gola
 
 ## Workflow
 
-1. **Format** Go files using `make fmt` which runs `gofumpt`.
+1. **Format** Go files using `make fmt` which runs `gofmt`.
 2. **Type-check** the code with `go vet ./...` and ensure it builds.
 3. **Lint** with `make lint` (GolangCI-Lint).
 4. **Run tests** with `make test` and include coverage. Use Arrange‑Act‑Assert patterns for non-trivial features and add integration tests when packages interact.
@@ -26,7 +26,7 @@ This repository provides a **Go** starter template with Docker, GoReleaser, Gola
 ## Code Style
 
 - Four space indentation and LF line endings, as enforced by `.editorconfig`.
-- Format code with `gofumpt` via `make fmt`.
+- Format code with `gofmt` via `make fmt`.
 - Package names are short and lowercase. Exported types and functions use `PascalCase`.
 - Keep functions small and single purpose; related code should appear close together.
 - Ensure type safety with compile‑time checks and generics where appropriate.

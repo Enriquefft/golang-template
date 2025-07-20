@@ -53,7 +53,7 @@ make build
 * `make build` — Compile binaries
 * `make test` — Run tests and generate coverage
 * `make lint` — Run GolangCI‑Lint
-* `make fmt` — Format code with gofumpt
+* `make fmt` — Format code with gofmt
 * `make release` — Publish via GoReleaser
 * `make docker-build` — Build Docker image locally
 

@@ -14,7 +14,7 @@ lint:
 	golangci-lint run
 
 fmt:
-	gofumpt -w $(shell find . -name '*.go' -not -path './vendor/*')
+	gofmt -w $(shell find . -name '*.go' -not -path './vendor/*')
 
 vet:
 	go vet ./...
